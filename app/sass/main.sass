@@ -1,0 +1,216 @@
+@import "fonts"
+@import "_libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+
+.ishome
+	background-color: #f1f3f6
+	
+		
+.invoices
+	padding-top: 50px
+	padding-bottom: 50px
+	.invoice
+		background-color: #fff
+		.invoice-view
+			background-color: #f1f3f6
+			padding-left: 12px
+			margin-right: 30px
+		.new-invoices
+			border-bottom: 3px solid #f1f3f6
+			padding-left: 12px
+			padding-top: 15px
+			margin-bottom: 15px
+
+
+.section_head
+	color: #a1a7b7
+	padding-left: 30px
+	font-size: 18px
+	h2
+		&::before
+			content: ''
+			height: 35px
+			width: 4px
+			position: absolute
+			background-color: #e4e6e9
+			top: 27px
+			left: 0px
+		&::after
+			content: ''
+			height: 2px
+			width: 100%
+			position: absolute
+			background-color: #e4e6e9
+			top: 45px
+			margin-left: 47px
+
+
+.actions_wrapper
+	background-color: #fff
+	padding-bottom: 20px
+	.actions
+		padding-left: 5px
+
+
+
+.button-form
+	width: 100%
+
+.button
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: #4973ff
+	padding: 16px 45px
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 3px
+	border-radius: 10px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: darken(#4973ff, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten(#4973ff, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken(#4973ff, 5%)
+		&::after
+			opacity: .32
+
+
+#create_invoice
+	max-width: 500px
+	margin: auto
+	position: relative
+	background-color: #f1f3f6
+.popup-form
+
+	li
+		list-style-type: none
+		padding: 10px
+		input
+			width: 100%
+		textarea
+			width: 100%
+			
+	.button-wrap
+		text-align: center
+		padding-left: 35px
+
+.mfp-forms
+	.forms
+		background-color: rgba(36, 51, 67, 1)
+		ol
+		    padding-inline-start: 0
+.button.mfp-arrow, button.mfp-close
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: #4973ff
+	// padding: 0px 90px 0px 40px
+	width: 100%
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 3px
+	border-radius: 10px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	&.mfp-bg
+		opacity: 0
+		transition: all 0.25s ease-out
+		&.mfp-ready
+			opacity: 0.8
+		&.mfp-removing
+			opacity: 0
+ 	&.mfp-wrap
+		.mfp-content
+			opacity: 0
+			transition: all 0.25s ease-out
+	&.mfp-ready .mfp-content
+		opacity: 1
+	&.mfp-removing .mfp-content
+		opacity: 0
+
+.pa
+	padding: 20px
+
+
+#error
+	color: red
+
+@import "media" // Всегда в конце

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Intern_Test task_Name_Surname</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+
+
+</head>
+
+<body class="ishome">
+	<section class="invoice">
+		<div class="section_head">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10">
+						<h2>Invoices</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row ">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="actions_wrapper">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-10 col-sm-12">
+									<div class="actions">
+										<h3>Actions</h3>
+										<a href="#create_invoice" class="button popup-with-move-anim">Add now</a>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="invoices">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="invoice">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+											<h3>Invoices</h3>
+										<div class="invoice-view">
+											<div class="container">
+												<div class="row">
+													<div class="col-md-3 col-sm-3 col-xs-3"><p>Criate</p></div>
+													<div class="col-md-3 col-sm-3 col-xs-3"><p>No</p></div>
+													<div class="col-md-3 col-sm-3 col-xs-3"><p>Supply</p></div>
+													<div class="col-md-3 col-sm-3 col-xs-3"><p>Comment</p></div>
+												</div>
+											</div>
+										</div>
+										<div class="main-invoice">
+											<div class="new-invoices">
+												<div class="new-invoice">
+													<div class="container">
+														<div class="row">
+															<div class="col-md-3 col-sm-3 col-xs-3"><div>20-03-2018</div></div>
+															<div class="col-md-3 col-sm-3 col-xs-3"><a><div>INV-000001</div></a></div>
+															<div class="col-md-3 col-sm-3 col-xs-3"><div>20-03-2018</div></div>
+															<div class="col-md-3 col-sm-3 col-xs-3"><div>Test invoice</div></div>
+
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</section>
+	<div class="hidden">
+				<form class="popup-form create_invoice zoom-anim-dialog" id="create_invoice">
+					<h1>New Invoises</h1>
+					<fieldset style="border:0;">
+						<ol>
+							<li>
+								<label for="Number">Number</label>
+								<input  id="numberText" class="clear" name="number" type="text" placeholder="INV-000001" required="">
+								<div id="error" class="hidden">You must enter a minimum of 3 symbols</div>
+							</li>
+							<li>
+								<label for="Invoice Date">Invoice Date</label>
+								<input id="invoiceDateText" class="clear" name="Invoice Date" type="date"  placeholder="26-09-2018" required="">
+							</li>
+							<li>
+								<label for="Supply Date">Supply Date</label>
+								<input id="supplyDateText" name="Supply Date" type="text" disabled="">
+							</li>
+							<li>
+								<label for="textarea">Comment</label><br>
+								<textarea id="commentText" class="clear" maxlength="160" placeholder="Coments..."></textarea>
+							</li>
+						</ol>
+						<div class="button-wrap">
+							<button id="add" class="button button-form mfp-close ">Save</button>
+						</div>
+					</fieldset>
+					<input type="hidden" name="formname" >
+				</form>
+			</div>
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
